@@ -36,33 +36,7 @@ body {
   gap: 20px;
 }
 
-.logo-section {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
-.french-flag {
-  display: flex;
-  width: 30px;
-  height: 20px;
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.flag-stripe {
-  flex: 1;
-  height: 100%;
-}
-
-.flag-stripe.blue { background: #002395; }
-.flag-stripe.white { background: #fff; }
-.flag-stripe.red { background: #ed2939; }
-
-.republic-text {
-  font-size: 14px;
-  font-weight: 500;
-}
 
 .header-title h1 {
   font-size: 18px;

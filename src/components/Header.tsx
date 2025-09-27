@@ -6,16 +6,8 @@ const Header: React.FC = () => {
       <div className="header-top">
         <div className="container">
           <div className="header-content">
-            <div className="logo-section">
-              <div className="french-flag">
-                <div className="flag-stripe blue"></div>
-                <div className="flag-stripe white"></div>
-                <div className="flag-stripe red"></div>
-              </div>
-              <span className="republic-text">République Française</span>
-            </div>
             <div className="header-title">
-              <h1>CCPO - Plus fraîche ma ville</h1>
+              <h1>CCPO - Clausier d'adaptation au changement climatique</h1>
             </div>
           </div>
         </div>

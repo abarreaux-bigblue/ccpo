@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Filters } from './types';
 import { solutions } from './data/solutions';
 import Header from './components/Header';
