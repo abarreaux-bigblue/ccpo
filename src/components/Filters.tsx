@@ -7,15 +7,11 @@ interface FiltersProps {
 }
 
 const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => {
-  const spaceOptions = [
-    { value: 'all', label: 'Tous espaces' },
-    { value: 'rond-point', label: 'Rond point' },
-    { value: 'batiment', label: 'Bâtiment' },
-    { value: 'parking', label: 'Parking' },
-    { value: 'rue', label: 'Rue' },
-    { value: 'place', label: 'Place' },
-    { value: 'cour-ecole', label: 'Cour d\'école' },
-    { value: 'espaces-verts', label: 'Espaces verts' }
+  const themeOptions = [
+    { value: 'all', label: 'Tous thèmes' },
+    { value: 'alimentation', label: 'Alimentation' },
+    { value: 'eau', label: 'Eau' },
+    { value: 'habitat', label: 'Habitat' }
   ];
 
   const typeOptions = [
@@ -36,13 +32,13 @@ const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => {
   return (
     <div className="filters-section">
       <div className="filter-group">
-        <h3>Tous espaces</h3>
+        <h3>Thèmes</h3>
         <div className="filter-options">
-          {spaceOptions.map(option => (
+          {themeOptions.map(option => (
             <button
               key={option.value}
-              className={`filter-btn ${filters.space === option.value ? 'active' : ''}`}
-              onClick={() => onFilterChange('space', option.value)}
+              className={`filter-btn ${filters.theme === option.value ? 'active' : ''}`}
+              onClick={() => onFilterChange('theme', option.value)}
             >
               {option.label}
             </button>

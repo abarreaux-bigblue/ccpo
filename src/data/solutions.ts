@@ -11,7 +11,7 @@ export const solutions: Solution[] = [
     tempType: "intérieure",
     duration: "de 3 à 6 mois",
     cost: "de 150 à 500 € HT / m²",
-    spaces: ["batiment", "cour-ecole"]
+    theme: "habitat"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const solutions: Solution[] = [
     tempType: "",
     duration: "de 6 à 24 mois",
     cost: "de 150 à 200 € HT / MWh",
-    spaces: ["batiment"]
+    theme: "habitat"
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const solutions: Solution[] = [
     tempType: "de l'air",
     duration: "de 6 à 12 mois",
     cost: "de 60 à 150 € HT / m²",
-    spaces: ["rue", "place", "parking"]
+    theme: "eau"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const solutions: Solution[] = [
     tempType: "intérieure",
     duration: "de 6 à 12 mois",
     cost: "de 100 à 125 € HT / MWh",
-    spaces: ["batiment"]
+    theme: "habitat"
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ export const solutions: Solution[] = [
     tempType: "de l'air",
     duration: "de 0 à 1 mois",
     cost: "de 30 à 60 € HT / m²",
-    spaces: ["cour-ecole", "espaces-verts"]
+    theme: "alimentation"
   },
   {
     id: 6,
@@ -71,7 +71,7 @@ export const solutions: Solution[] = [
     tempType: "intérieure",
     duration: "de 0 à 1 mois",
     cost: "de 250 à 900 € HT / m²",
-    spaces: ["batiment"]
+    theme: "habitat"
   },
   {
     id: 7,
@@ -83,7 +83,7 @@ export const solutions: Solution[] = [
     tempType: "de l'air",
     duration: "de 3 à 6 mois",
     cost: "de 10 à 700 € HT / m²",
-    spaces: ["batiment"]
+    theme: "alimentation"
   },
   {
     id: 8,
@@ -95,7 +95,7 @@ export const solutions: Solution[] = [
     tempType: "de l'air",
     duration: "de 3 à 6 mois",
     cost: "de 500 à 2 500 € HT / m²",
-    spaces: ["place", "rue", "espaces-verts"]
+    theme: "eau"
   },
   {
     id: 9,
@@ -107,7 +107,7 @@ export const solutions: Solution[] = [
     tempType: "de l'air",
     duration: "de 6 à 12 mois",
     cost: "de 100 à 1 600 € HT / m²",
-    spaces: ["batiment", "espaces-verts"]
+    theme: "alimentation"
   },
   {
     id: 10,
@@ -119,7 +119,7 @@ export const solutions: Solution[] = [
     tempType: "intérieure",
     duration: "de 0 à 3 mois",
     cost: "de 120 à 270 € HT / m²",
-    spaces: ["batiment"]
+    theme: "habitat"
   },
   {
     id: 11,
@@ -131,7 +131,7 @@ export const solutions: Solution[] = [
     tempType: "de l'air",
     duration: "de 0 à 1 mois",
     cost: "de 100 à 150 € HT / m²",
-    spaces: ["cour-ecole", "espaces-verts"]
+    theme: "alimentation"
   },
   {
     id: 12,
@@ -143,6 +143,6 @@ export const solutions: Solution[] = [
     tempType: "de l'air",
     duration: "de 1 à 3 mois",
     cost: "de 400 à 2 000 € HT / m²",
-    spaces: ["cour-ecole", "place", "espaces-verts"]
+    theme: "eau"
   }
 ];

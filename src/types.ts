@@ -8,15 +8,15 @@ export interface Solution {
   tempType: string;
   duration: string;
   cost: string;
-  spaces: string[];
+  theme: 'alimentation' | 'eau' | 'habitat';
 }
 
 export interface Filters {
-  space: string;
+  theme: string;
   type: string;
   temperature: string;
 }
 
-export type SpaceType = 'all' | 'rond-point' | 'batiment' | 'parking' | 'rue' | 'place' | 'cour-ecole' | 'espaces-verts';
+export type ThemeType = 'all' | 'alimentation' | 'eau' | 'habitat';
 export type SolutionType = 'all' | 'verte' | 'bleue' | 'grise' | 'douce';
 export type TemperatureType = 'all' | 'faible' | 'moyenne' | 'forte';

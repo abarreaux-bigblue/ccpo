@@ -9,7 +9,7 @@ import './style.css';
 
 const App = () => {
   const [filters, setFilters] = useState<Filters>({
-    space: 'all',
+    theme: 'all',
     type: 'all',
     temperature: 'all'
   });
@@ -28,7 +28,7 @@ const App = () => {
       <main className="main-content">
         <div className="container">
           <div className="page-header">
-            <h1>Explorer toutes les solutions de rafraîchissement urbain</h1>
+            <h1>Explorer les solutions d'adaptation</h1>
           </div>
 
           <FiltersComponent 
