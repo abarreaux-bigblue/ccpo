@@ -6,23 +6,16 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>CCPO - Plus fraîche ma ville</h3>
-            <p>Notre mission : aider les collectivités dans le choix de solutions de rafraîchissement urbain pérennes et durables.</p>
-          </div>
-          <div className="footer-section">
-            <h4>Nos partenaires</h4>
-            <ul>
-              <li>Association des maires de France (AMF)</li>
-              <li>Agence nationale de l'urbanisme (ANRU)</li>
-            </ul>
+            <h3>CCPO - Clausier d'adaptation au changement climatique</h3>
+            <p>Des suggestions chiffrées et précises pour adapter nos modes de vie.</p>
           </div>
           <div className="footer-section">
             <h4>Liens utiles</h4>
             <ul>
-              <li><a href="#">Accessibilité : non conforme</a></li>
-              <li><a href="#">Mentions légales</a></li>
-              <li><a href="#">Politique de confidentialité</a></li>
-              <li><a href="#">Plan du site</a></li>
+              <li><a href="#">TODO</a></li>
+              <li><a href="#">TODO</a></li>
+              <li><a href="#">TODO</a></li>
+              <li><a href="#">TODO</a></li>
             </ul>
           </div>
         </div>
