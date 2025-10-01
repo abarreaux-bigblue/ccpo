@@ -3,7 +3,6 @@ import { Solution } from '../types';
 export const solutions: Solution[] = [
   {
     title: "Fermer volets et rideaux le jour, aérer la nuit",
-    type: "grise",
     description: "Limiter la transmission de la chaleur de la journée",
     temperature: "moyenne",
     tempValue: "-2,3°C",
@@ -14,7 +13,6 @@ export const solutions: Solution[] = [
   },
   {
     title: "Installer des stores extérieurs",
-    type: "grise",
     description: "",
     temperature: "faible",
     tempValue: "Baisse de l'ICU",
@@ -25,7 +23,6 @@ export const solutions: Solution[] = [
   },
   {
     title: "Créer de l'ombre avec des arbres et des végétaux",
-    type: "bleue",
     description: "",
     temperature: "moyenne",
     tempValue: "-2,5°C",

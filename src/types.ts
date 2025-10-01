@@ -1,6 +1,5 @@
 export interface Solution {
   title: string;
-  type: 'verte' | 'bleue' | 'grise' | 'douce';
   description: string;
   temperature: 'faible' | 'moyenne' | 'forte';
   tempValue: string;
