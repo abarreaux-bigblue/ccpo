@@ -204,18 +204,6 @@ body {
   color: #374151;
 }
 
-.stat-value.temp-faible {
-  color: #10b981;
-}
-
-.stat-value.temp-moyenne {
-  color: #f59e0b;
-}
-
-.stat-value.temp-forte {
-  color: #ef4444;
-}
-
 /* Footer */
 .footer {
   background: #1f2937;

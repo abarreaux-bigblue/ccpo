@@ -23,10 +23,10 @@ const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => {
   ];
 
   const temperatureOptions = [
-    { value: 'all', label: 'Toutes températures' },
-    { value: 'faible', label: 'Faible (< 1°C)' },
-    { value: 'moyenne', label: 'Moyenne (Entre 1 et 3°C)' },
-    { value: 'forte', label: 'Forte (>= 3°C)' }
+    { value: 'all', label: 'Tous impacts' },
+    { value: 'faible', label: 'Faible' },
+    { value: 'moyen', label: 'Moyen' },
+    { value: 'important', label: 'Important' }
   ];
 
   return (
@@ -62,13 +62,13 @@ const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => {
       </div>
 
       <div className="filter-group">
-        <h3>Baisse de la température</h3>
+        <h3>Impact</h3>
         <div className="filter-options">
           {temperatureOptions.map(option => (
             <button
               key={option.value}
-              className={`filter-btn ${filters.temperature === option.value ? 'active' : ''}`}
-              onClick={() => onFilterChange('temperature', option.value)}
+              className={`filter-btn ${filters.impact === option.value ? 'active' : ''}`}
+              onClick={() => onFilterChange('impact', option.value)}
             >
               {option.label}
             </button>

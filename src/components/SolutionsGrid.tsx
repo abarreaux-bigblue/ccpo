@@ -10,9 +10,9 @@ interface SolutionsGridProps {
 const SolutionsGrid: React.FC<SolutionsGridProps> = ({ solutions, filters }) => {
   const filteredSolutions = solutions.filter(solution => {
     const themeMatch = filters.theme === 'all' || solution.theme === filters.theme;
-    const tempMatch = filters.temperature === 'all' || solution.temperature === filters.temperature;
+    const impactMatch = filters.impact === 'all' || solution.impact === filters.impact;
     
-    return themeMatch && tempMatch;
+    return themeMatch && impactMatch;
   });
 
   return (

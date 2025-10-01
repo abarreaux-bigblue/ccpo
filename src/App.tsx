@@ -11,7 +11,7 @@ const App = () => {
   const [filters, setFilters] = useState<Filters>({
     theme: 'all',
     type: 'all',
-    temperature: 'all'
+    impact: 'all'
   });
 
   const handleFilterChange = (filterType: keyof Filters, value: string) => {

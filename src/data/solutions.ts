@@ -4,7 +4,7 @@ export const solutions: Solution[] = [
   {
     title: "Fermer volets et rideaux le jour, aérer la nuit",
     description: "Limiter la transmission de la chaleur de la journée",
-    temperature: "moyenne",
+    impact: "moyen",
     tempValue: "-2,3°C",
     tempType: "intérieure",
     duration: "de 3 à 6 mois",
@@ -14,7 +14,7 @@ export const solutions: Solution[] = [
   {
     title: "Installer des stores extérieurs",
     description: "aaaa",
-    temperature: "faible",
+    impact: "faible",
     tempValue: "Baisse de l'ICU",
     tempType: "",
     duration: "de 6 à 24 mois",
@@ -24,7 +24,7 @@ export const solutions: Solution[] = [
   {
     title: "Créer de l'ombre avec des arbres et des végétaux",
     description: "aaaa",
-    temperature: "moyenne",
+    impact: "moyen",
     tempValue: "-2,5°C",
     tempType: "de l'air",
     duration: "de 6 à 12 mois",
@@ -34,7 +34,7 @@ export const solutions: Solution[] = [
   {
     title: "Installer un récupérateur d'eau de pluie",
     description: "aaaa",
-    temperature: "moyenne",
+    impact: "important",
     tempValue: "-2,5°C",
     tempType: "de l'air",
     duration: "de 6 à 12 mois",

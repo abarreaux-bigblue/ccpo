@@ -1,7 +1,7 @@
 export interface Solution {
   title: string;
   description: string;
-  temperature: 'faible' | 'moyenne' | 'forte';
+  impact: 'faible' | 'moyen' | 'important';
   tempValue: string;
   tempType: string;
   duration: string;
@@ -12,9 +12,9 @@ export interface Solution {
 export interface Filters {
   theme: string;
   type: string;
-  temperature: string;
+  impact: string;
 }
 
 export type ThemeType = 'all' | 'température' | 'eau' | 'extérieur' | 'alimentation' | 'énergie';
 export type SolutionType = 'all' | 'verte' | 'bleue' | 'grise' | 'douce';
-export type TemperatureType = 'all' | 'faible' | 'moyenne' | 'forte';
+export type ImpactType = 'all' | 'faible' | 'moyen' | 'important';

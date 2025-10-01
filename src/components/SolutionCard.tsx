@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { Solution, ThemeType } from '../types';
+import { ImpactType, Solution, ThemeType } from '../types';
 
 interface SolutionCardProps {
   solution: Solution;
@@ -8,6 +8,7 @@ interface SolutionCardProps {
 const SolutionCard: React.FC<SolutionCardProps> = ({ solution }) => {
   const cardStyle = solutionThemeToCardStyleMap.get(solution.theme) || {};
   const headerStyle = solutionThemeToHeaderStyleMap.get(solution.theme) || {};
+  const impactStyle = solutionImpactToStyleMap.get(solution.impact) || {};
   return (
     <div className="solution-card" style={cardStyle}>
       <div className="solution-header">
@@ -22,7 +23,7 @@ const SolutionCard: React.FC<SolutionCardProps> = ({ solution }) => {
           <span className="stat-label">
             Baisse {solution.tempType ? solution.tempType : ''} de la température
           </span>
-          <span className={`stat-value temp-${solution.temperature}`}>
+          <span className="stat-value temp" style={impactStyle}>
             {solution.tempValue}
           </span>
         </div>
@@ -57,4 +58,11 @@ const solutionThemeToHeaderStyleMap = new Map<ThemeType, CSSProperties>([
   ["alimentation", { background: "#f3fb0c" }],
   ["énergie", { background: "#b8b9b2" }],
   ["all", { background: "#ffffff" }]
+]);
+
+const solutionImpactToStyleMap = new Map<ImpactType, CSSProperties>([
+  ["faible", { color: "#10b981" }],
+  ["moyen", { color: "#f59e0b" }],
+  ["important", { color: "#ef4444" }],
+  ["all", { color: "#374151" }]
 ]);
