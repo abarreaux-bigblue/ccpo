@@ -157,22 +157,7 @@ body {
 
 .solution-type.verte {
   background: #d1fae5;
-  color: #065f46;
-}
-
-.solution-type.bleue {
-  background: #dbeafe;
-  color: #1e40af;
-}
-
-.solution-type.grise {
-  background: #f3f4f6;
-  color: #374151;
-}
-
-.solution-type.douce {
-  background: #fef3c7;
-  color: #92400e;
+  color: #3489f0;
 }
 
 .solution-title {

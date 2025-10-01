@@ -6,12 +6,13 @@ interface SolutionCardProps {
 }
 
 const SolutionCard: React.FC<SolutionCardProps> = ({ solution }) => {
-  const cardStyle = solutionThemeToCardStyleMap[solution.theme];
+  const cardStyle = solutionThemeToCardStyleMap.get(solution.theme) || {};
+  const headerStyle = solutionThemeToHeaderStyleMap.get(solution.theme) || {};
   return (
     <div className="solution-card" style={cardStyle}>
       <div className="solution-header">
-        <span className={`solution-type ${solution.type}`}>
-          Solution {solution.type}
+        <span className="solution-type" style={headerStyle}>
+          {solution.theme}
         </span>
         <h3 className="solution-title">{solution.title}</h3>
       </div>
@@ -40,23 +41,20 @@ const SolutionCard: React.FC<SolutionCardProps> = ({ solution }) => {
 
 export default SolutionCard;
 
-const solutionThemeToCardStyleMap : Record<ThemeType, CSSProperties> = {
-  "température": {
-    borderLeftColor: "#10b981"
-  },
-  "eau": {
-    borderLeftColor: "#3b82f6"
-  },
-  "extérieur": {
-    borderLeftColor: "#6b7280"
-  },
-  "alimentation": {
-    borderLeftColor: "#f59e0b"
-  },
-  "énergie": {
-    borderLeftColor: "#ef4444"
-  },
-  "all": {
-    borderLeftColor: "#6b7280"
-  }
-}
+const solutionThemeToCardStyleMap = new Map<ThemeType, CSSProperties>([
+  ["température", { borderLeftColor: "#f79c1d" }],
+  ["eau", { borderLeftColor: "#3489f0" }],
+  ["extérieur", { borderLeftColor: "#15ad18" }],
+  ["alimentation", { borderLeftColor: "#f3fb0c" }],
+  ["énergie", { borderLeftColor: "#b8b9b2" }],
+  ["all", { borderLeftColor: "#ffffff" }]
+]);
+
+const solutionThemeToHeaderStyleMap = new Map<ThemeType, CSSProperties>([
+  ["température", { background: "#f79c1d" }],
+  ["eau", { background: "#3489f0" }],
+  ["extérieur", { background: "#15ad18" }],
+  ["alimentation", { background: "#f3fb0c" }],
+  ["énergie", { background: "#b8b9b2" }],
+  ["all", { background: "#ffffff" }]
+]);
