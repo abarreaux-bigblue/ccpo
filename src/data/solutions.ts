@@ -13,7 +13,7 @@ export const solutions: Solution[] = [
   },
   {
     title: "Installer des stores extérieurs",
-    description: "",
+    description: "aaaa",
     temperature: "faible",
     tempValue: "Baisse de l'ICU",
     tempType: "",
@@ -23,7 +23,17 @@ export const solutions: Solution[] = [
   },
   {
     title: "Créer de l'ombre avec des arbres et des végétaux",
-    description: "",
+    description: "aaaa",
+    temperature: "moyenne",
+    tempValue: "-2,5°C",
+    tempType: "de l'air",
+    duration: "de 6 à 12 mois",
+    cost: "de 60 à 150 € HT / m²",
+    theme: "température"
+  },
+  {
+    title: "Installer un récupérateur d'eau de pluie",
+    description: "aaaa",
     temperature: "moyenne",
     tempValue: "-2,5°C",
     tempType: "de l'air",
