@@ -1,5 +1,4 @@
 export interface Solution {
-  id: number;
   title: string;
   type: 'verte' | 'bleue' | 'grise' | 'douce';
   description: string;

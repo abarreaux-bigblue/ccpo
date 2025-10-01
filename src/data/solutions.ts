@@ -2,7 +2,6 @@ import { Solution } from '../types';
 
 export const solutions: Solution[] = [
   {
-    id: 1,
     title: "Adaptation des bâtiments - école",
     type: "grise",
     description: "Améliore le confort thermique grâce à l'isolation, l'ombrage et la ventilation",
@@ -14,7 +13,6 @@ export const solutions: Solution[] = [
     theme: "habitat"
   },
   {
-    id: 2,
     title: "Réseaux de froid",
     type: "grise",
     description: "Mutualise la production de froid et valorise les ressources énergétiques locales",
@@ -26,7 +24,6 @@ export const solutions: Solution[] = [
     theme: "habitat"
   },
   {
-    id: 3,
     title: "Désimperméabilisation",
     type: "bleue",
     description: "Favorise le cycle de l'eau et contribue à réduire le phénomène d'ICU",
@@ -38,7 +35,6 @@ export const solutions: Solution[] = [
     theme: "eau"
   },
   {
-    id: 4,
     title: "Géocooling",
     type: "grise",
     description: "Utilise la fraîcheur du sol pour la diffuser dans les bâtiments",
@@ -50,7 +46,6 @@ export const solutions: Solution[] = [
     theme: "habitat"
   },
   {
-    id: 5,
     title: "Arbres et végétaux dans la cour d'école",
     type: "verte",
     description: "Fait de l'ombre et rafraîchit l'air par évapotranspiration",
@@ -62,7 +57,6 @@ export const solutions: Solution[] = [
     theme: "alimentation"
   },
   {
-    id: 6,
     title: "Structure d'ombrage en façade",
     type: "grise",
     description: "Limite l'exposition à la chaleur et améliore le confort thermique à l'intérieur",
@@ -74,7 +68,6 @@ export const solutions: Solution[] = [
     theme: "habitat"
   },
   {
-    id: 7,
     title: "Façade végétalisée",
     type: "verte",
     description: "Contribue à isoler les bâtiments et permet de lutter contre le phénomène d'ICU",
@@ -86,7 +79,6 @@ export const solutions: Solution[] = [
     theme: "alimentation"
   },
   {
-    id: 8,
     title: "Fontaines et réseaux de fontainerie",
     type: "bleue",
     description: "Offre un accès visuel et auditif à l'eau et une sensation indirecte de fraîcheur",
@@ -98,7 +90,6 @@ export const solutions: Solution[] = [
     theme: "eau"
   },
   {
-    id: 9,
     title: "Jardin suspendu sur dalle",
     type: "verte",
     description: "Rafraîchit l'air et végétalise un espace déconnecté du sol",
@@ -110,7 +101,6 @@ export const solutions: Solution[] = [
     theme: "alimentation"
   },
   {
-    id: 10,
     title: "Isolation thermique",
     type: "grise",
     description: "Conserve une bonne température à l'intérieur des bâtiments",
@@ -122,7 +112,6 @@ export const solutions: Solution[] = [
     theme: "habitat"
   },
   {
-    id: 11,
     title: "Jardins potagers, vergers dans la cour d'école",
     type: "verte",
     description: "Rafraîchit l'air par l'évapotranspiration et la création d'ombrage",
@@ -134,7 +123,6 @@ export const solutions: Solution[] = [
     theme: "alimentation"
   },
   {
-    id: 12,
     title: "Jeux d'eau",
     type: "bleue",
     description: "Offre une sensation directe de fraîcheur et crée du lien social",

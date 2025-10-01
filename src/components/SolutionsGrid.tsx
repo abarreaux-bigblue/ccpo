@@ -18,8 +18,8 @@ const SolutionsGrid: React.FC<SolutionsGridProps> = ({ solutions, filters }) => 
 
   return (
     <div className="solutions-grid">
-      {filteredSolutions.map(solution => (
-        <SolutionCard key={solution.id} solution={solution} />
+      {filteredSolutions.map((solution: Solution, index: number) => (
+        <SolutionCard key={index} solution={solution} />
       ))}
     </div>
   );
