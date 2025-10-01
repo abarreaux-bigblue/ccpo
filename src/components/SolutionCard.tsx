@@ -1,13 +1,14 @@
-import React from 'react';
-import { Solution } from '../types';
+import React, { CSSProperties } from 'react';
+import { Solution, ThemeType } from '../types';
 
 interface SolutionCardProps {
   solution: Solution;
 }
 
 const SolutionCard: React.FC<SolutionCardProps> = ({ solution }) => {
+  const cardStyle = solutionThemeToCardStyleMap[solution.theme];
   return (
-    <div className="solution-card" data-type={solution.type}>
+    <div className="solution-card" style={cardStyle}>
       <div className="solution-header">
         <span className={`solution-type ${solution.type}`}>
           Solution {solution.type}
@@ -38,3 +39,24 @@ const SolutionCard: React.FC<SolutionCardProps> = ({ solution }) => {
 };
 
 export default SolutionCard;
+
+const solutionThemeToCardStyleMap : Record<ThemeType, CSSProperties> = {
+  "température": {
+    borderLeftColor: "#10b981"
+  },
+  "eau": {
+    borderLeftColor: "#3b82f6"
+  },
+  "extérieur": {
+    borderLeftColor: "#6b7280"
+  },
+  "alimentation": {
+    borderLeftColor: "#f59e0b"
+  },
+  "énergie": {
+    borderLeftColor: "#ef4444"
+  },
+  "all": {
+    borderLeftColor: "#6b7280"
+  }
+}

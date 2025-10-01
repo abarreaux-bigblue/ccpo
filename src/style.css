@@ -141,22 +141,6 @@ body {
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
-.solution-card[data-type="verte"] {
-  border-left-color: #10b981;
-}
-
-.solution-card[data-type="bleue"] {
-  border-left-color: #3b82f6;
-}
-
-.solution-card[data-type="grise"] {
-  border-left-color: #6b7280;
-}
-
-.solution-card[data-type="douce"] {
-  border-left-color: #f59e0b;
-}
-
 .solution-header {
   margin-bottom: 16px;
 }
